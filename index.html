@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>电影购票 - 移动端首页</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="top-bar">
+      <div class="brand">FilmGo</div>
+      <div class="quick-actions">
+        <span class="pill pill-ghost">今日优惠</span>
+        <span class="pill pill-ghost">会员日</span>
+      </div>
+    </header>
+
+    <section class="search-block">
+      <div class="search-bar" role="search">
+        <span class="icon">🔍</span>
+        <input id="searchInput" type="text" placeholder="搜索电影 / 影人" aria-label="搜索电影" autocomplete="off">
+        <button id="clearSearch" class="icon-button" aria-label="清除搜索" hidden>✕</button>
+      </div>
+      <ul id="suggestions" class="suggestions" aria-label="搜索建议" hidden></ul>
+    </section>
+
+    <section class="carousel" aria-label="热映轮播">
+      <div class="carousel-track" id="carouselTrack"></div>
+      <div class="carousel-dots" id="carouselDots" aria-label="轮播指示"></div>
+      <div class="carousel-controls">
+        <button class="ghost-btn" id="prevSlide" aria-label="上一张">‹</button>
+        <button class="ghost-btn" id="nextSlide" aria-label="下一张">›</button>
+      </div>
+    </section>
+
+    <section class="category-tabs" aria-label="分类">
+      <button class="tab active" data-category="全部">全部</button>
+      <button class="tab" data-category="热门">热门</button>
+      <button class="tab" data-category="正在热映">正在热映</button>
+      <button class="tab" data-category="即将上映">即将上映</button>
+      <button class="tab" data-category="经典">经典</button>
+    </section>
+
+    <main class="content">
+      <section class="movie-grid" aria-label="电影列表" id="movieGrid"></section>
+
+      <section class="box-office" aria-label="今日票房排行榜">
+        <div class="section-header">
+          <h2>今日票房排行榜</h2>
+          <span class="meta">实时刷新示意</span>
+        </div>
+        <ol class="ranking" id="rankingList"></ol>
+      </section>
+
+      <section class="recommend" aria-label="猜你喜欢">
+        <div class="section-header">
+          <h2>猜你喜欢</h2>
+          <span class="meta">口碑&预售趋势</span>
+        </div>
+        <div class="horizontal-cards" id="recommendList"></div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="底部导航">
+      <a class="nav-item active" href="#" aria-label="首页">
+        <img src="assets/images/nav/home.png" alt="首页图标">
+        <span>首页</span>
+      </a>
+      <a class="nav-item" href="#" aria-label="电影">
+        <img src="assets/images/nav/movies.png" alt="电影图标">
+        <span>电影</span>
+      </a>
+      <a class="nav-item" href="#" aria-label="订单">
+        <img src="assets/images/nav/orders.png" alt="订单图标">
+        <span>订单</span>
+      </a>
+      <a class="nav-item" href="#" aria-label="我的">
+        <img src="assets/images/nav/profile.png" alt="我的图标">
+        <span>我的</span>
+      </a>
+    </nav>
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
