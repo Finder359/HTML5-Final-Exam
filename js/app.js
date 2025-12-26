@@ -55,7 +55,7 @@ const movies = [
     category: "即将上映",
     rating: 8.9,
     tags: ["动画", "家庭"],
-    poster: "assets/images/posters/poster1.jpg",
+    poster: "assets/images/posters/poster6.jpg",
     cast: "艾米·波勒 (配音)",
     length: "100分钟"
   },
@@ -65,7 +65,7 @@ const movies = [
     category: "经典",
     rating: 9.2,
     tags: ["动作", "科幻"],
-    poster: "assets/images/posters/poster2.jpg",
+    poster: "assets/images/posters/poster7.jpg",
     cast: "小罗伯特·唐尼",
     length: "181分钟"
   },
@@ -75,7 +75,7 @@ const movies = [
     category: "即将上映",
     rating: 9.3,
     tags: ["动画", "动作"],
-    poster: "assets/images/posters/poster3.jpg",
+    poster: "assets/images/posters/poster8.jpg",
     cast: "沙梅克·摩尔 (配音)",
     length: "140分钟"
   }
